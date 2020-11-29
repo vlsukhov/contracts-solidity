@@ -3,6 +3,10 @@ from mpmath import lambertw
 from decimal import Decimal
 from decimal import getcontext
 
+ONE = 1;
+MAX_WEIGHT = 1000000;
+MIN_PRECISION = 32;
+MAX_PRECISION = 127;
 
 getcontext().prec = mp.dps = 80 # 78 digits for a maximum of 2^256-1, and 2 more digits for after the decimal point
 
